@@ -16,6 +16,10 @@ In this project I build machine learning model to identify fraud in **Credit car
   * matplotlib
   * seaborn
   
+## Dataset
+
+  You can download the dataset used in this project from https://www.kaggle.com/mlg-ulb/creditcardfraud
+  
 ## What to predict:
 
   For each transaction in the test set,Our model will be trained to predict whether or not the transaction is fraudulent or not
