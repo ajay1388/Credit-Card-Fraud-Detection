@@ -11,11 +11,18 @@ data = pd.read_csv("creditcard.csv")
 print(data.head())
 print(data.info())
 
-X = data.drop(['Class'],axis = 1)
-Y = data['Class']
+cols = data.columns.tolist()
+
+cols = [ x for x in cols if x not in ['Class']]
+
+target = 'Class'
+
+X = data[cols]
+Y = data[target]
 
 print(X.shape)
 print(Y.shape)
+
 xData = X.values
 yData = Y.values
 
